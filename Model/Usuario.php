@@ -4,6 +4,16 @@ class Usuario {
       private $email;
       private $senha;
 
+      public function entrar(){
+
+      }
+      public function sair(){
+
+      }  
+      public function redefinirSenha(){
+
+      }
+
 }
 
 
