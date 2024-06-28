@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 
 class RelatorioPagamento {
@@ -17,5 +18,8 @@ class RelatorioPagamento {
 
 
 }
+=======
+<?php 
+>>>>>>> Stashed changes
 
 ?>
