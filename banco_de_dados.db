@@ -1,0 +1,48 @@
+CREATE TABLE "nome" (
+	"nome"	TEXT NOT NULL,
+	"id"	INTEGER NOT NULL UNIQUE,
+	"email"	TEXT NOT NULL,
+	"senha"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+
+
+CREATE TABLE "professor" (
+	"id_professor"	INTEGER NOT NULL UNIQUE,
+	"departamento"	TEXT NOT NULL,
+	"id_usuario"	INTEGER NOT NULL,
+	FOREIGN KEY("id_usuario") REFERENCES "usuário"("id"),
+	PRIMARY KEY("id_professor" AUTOINCREMENT)
+
+CREATE TABLE "coordenador" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"departamento"	TEXT NOT NULL,
+	"id_usuario"	INTEGER NOT NULL,
+	FOREIGN KEY("id_usuario") REFERENCES "usuário"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
+
+CREATE TABLE "DetalhesSalario" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"salario_base"	REAL NOT NULL,
+	"beneficios"	REAL NOT NULL,
+	"desconto"	REAL NOT NULL,
+	"id_professor"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+
+CREATE TABLE "holerite" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"idDetalhesSalario"	INTEGER NOT NULL,
+	"idFolhaDePagamento"	INTEGER,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("idDetalhesSalario") REFERENCES "DetalhesSalario",
+	FOREIGN KEY("idFolhaDePagamento") REFERENCES "FolhaDePagamento"
+
+);
+
+CREATE TABLE "RelatorioPagamento" (
+	"mes"	TEXT NOT NULL,
+	"ano"	TEXT NOT NULL,
+	"departamento"	TEXT NOT NULL,
+	"gerarRelatorio"	INTEGER NOT NULL,
+	"obterDetalhesRelatorio"	INTEGER NOT NULL,
+	"idRelatorioDePagamento"	INTEGER NOT NULL UNIQUE,
+	PRIMARY KEY("idRelatorioDePagamento" AUTOINCREMENT)
