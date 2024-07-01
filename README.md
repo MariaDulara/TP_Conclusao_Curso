@@ -9,4 +9,5 @@ Cristian;
 Maria Eduarda Silva;
 Guilherme Santos;
 Vinicius Marques;
-Wesley Pereira.
+Wesley Pereira;
+Carlos Magno.
