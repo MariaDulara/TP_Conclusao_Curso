@@ -10,5 +10,5 @@ Maria Eduarda Silva;
 Guilherme Santos;
 Vinicius Marques;
 Wesley Pereira;
-Carlos Magno.
+Carlos Magno;
 David Filiphe.
