@@ -11,3 +11,4 @@ Guilherme Santos;
 Vinicius Marques;
 Wesley Pereira;
 Carlos Magno.
+David Filiphe.
