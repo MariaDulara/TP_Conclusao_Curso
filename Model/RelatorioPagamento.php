@@ -18,8 +18,5 @@ class RelatorioPagamento {
 
 
 }
-=======
-<?php 
->>>>>>> Stashed changes
 
 ?>
