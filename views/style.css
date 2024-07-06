@@ -1,0 +1,11 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ --vermelho: #d10000;
+ ---preto: #000000;
+ --amarelo: #d3a832;
+ --branco: #ffffff;
+}
+.background-vermelho{
+    background: var(--amarelo);

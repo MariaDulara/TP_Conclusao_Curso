@@ -1,20 +1,28 @@
-<html>
-      <head>
-            <title>ERP - Folha de Pagamento</title>
-      </head>
-      <body>
-            <h2>Dashboard</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cad.css">
+    <title>login</title>
+    <link rel="shortcut icon" href="imagens/bandeira-menu.ico" type="image/x-icon">
+</head>
 
-            <nav>
-                  <ul>
-                        <li><a href="usuarios.php">Gestão de Usuários</a></li>
-                        <li><a href="cadastro_professor.php">Cadastro de Professores</a></li>
-                        <li><a href="folha_de_pagamento.php">Folha de Pagamento</a></li>
-                        <li><a href="holerites.php">Holerites</a></li>
-                        <li><a href="relatorios_pagamento.php">Relatórios de Pagamento</a></li>
-                        
-                  </ul>
-            </nav>
-      </body>
+<body>
+    <div class="box">
+        <div class="img-box">
+            <a href="index.html"><img src="../views/images.png"></a>
+        </div>
+        <div class="form-box">
+            <h2><a href="usuarios.php"> Gestão de Usuários &nbsp&nbsp</a>
+            <h2><a href="cadastro_professor.php"> Cadastro de Professores </a>
+            <h2><a href="folha_de_pagamento.php"> Folha de Pagamento &nbsp&nbsp</a>
+            <h2><a href="holerites.php"> Holerites &nbsp&nbsp</a>
+            <h2><a href="relatorios_pagamento.php"> Relatórios de Pagamento &nbsp&nbsp</a>
+            
+        </div>
+    </div>
+</body>
 </html>
