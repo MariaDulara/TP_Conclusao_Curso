@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="">
-      <title>Relatórios de Pagamento</title>
-      <link rel="shortcut icon" href="imagens/logo-proz.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"> <!-- Arquivo CSS externo -->
+    <title>Relatórios de Pagamento</title>
+    <link rel="shortcut icon" href="imagens/logo-proz.ico" type="image/x-icon">
 </head>
 <body>
-      <h2>Relatórios de Pagamento</h2>
+    <header>
+        <h2>Relatórios de Pagamento</h2>
+    </header>
 
-      <form action="" method="post">
-      <label for="departamento"></label>
-      <input type="text" name="departamento" id="departamento">
-
-      <label for="mes" nome="mes">Mês: </label>
-      <select name="mes" id="mes"></select>
-            <option value="jan">Janeiro</option>
-            <option value="fev">Fevereiro</option>
-            <option value="mar">Março</option>
-            <option value="abr">Abril</option>
-            <option value="mai">Maio</option>
-            <option value="jun">Junho</option>
-            <option value="jul">Julho</option>
-            <option value="ago">Agosto</option>
-            <option value="set">Setembro</option>
-            <option value="out">Outubro</option>
-            <option value="nov">Novembro</option>
-            <option value="dez">Dezembro</option>
-      </select>
-      <label for="ano">Ano</label>
-      <input type="number" id="ano" name="ano">
-
-      <button type="submit">Gerar Folha de Pagamento</button>
-      </form>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Filtros</legend>
+                <div class="input-group">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" name="departamento" id="departamento">
+                </div>
+                <div class="input-group">
+                    <label for="mes">Mês:</label>
+                    <select name="mes" id="mes">
+                        <option value="jan">Janeiro</option>
+                        <option value="fev">Fevereiro</option>
+                        <option value="mar">Março</option>
+                        <option value="abr">Abril</option>
+                        <option value="mai">Maio</option>
+                        <option value="jun">Junho</option>
+                        <option value="jul">Julho</option>
+                        <option value="ago">Agosto</option>
+                        <option value="set">Setembro</option>
+                        <option value="out">Outubro</option>
+                        <option value="nov">Novembro</option>
+                        <option value="dez">Dezembro</option>
+                    </select>
+                    <label for="ano">Ano:</label>
+                    <input type="number" id="ano" name="ano">
+                </div>
+                <button type="submit">Gerar Folha de Pagamento</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
