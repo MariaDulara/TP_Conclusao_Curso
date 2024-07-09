@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/cad.css">
-    <title>Cadastro</title>
     <link rel="shortcut icon" href="imagens/logo-proz.ico" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo/cad.css">
 </head>
 <body>
     <div class="box">
@@ -14,7 +14,7 @@
             <a href="index.php"><img src="../views/imagens/proz.png"></a>
         </div>
         <div class="form-box">
-            <h2><a href="index.php"> Início &nbsp&nbsp</a>
+            <h2><a href="index.php">Início</a>
             <form action="#">
                 <div class="input-group">
                     <label for="Departamento">Departamento</label>
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="Saário Base">Salário Base</label>
+                    <label for="Salário Base">Salário Base</label>
                     <input type="int" id="salario" placeholder="Digite o seu Salário" required>
                 </div>
 

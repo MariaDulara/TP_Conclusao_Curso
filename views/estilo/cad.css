@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: blueviolet;
+    background-color: #eeddfd;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,24 +27,26 @@ body{
 }
 .img-box{
     
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #593493;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border-radius: 20px 0 0 20px;
+    box-shadow: 10px 11px 15px 2px rgba(0, 0, 0, 0.250);
 }
 .img-box img{
     width: 100%;
 }
 .form-box{
     
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(40px);
     padding: 30px 40px;
     width: 50%;
     border-radius: 0 20px 20px 0;
+    box-shadow: 12px 8px 15px 2px rgba(0, 0, 0, 0.250);
 }
 .form-box h2{
     font-size: 30px;
@@ -79,14 +81,14 @@ form .input-group input{
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
     outline: none;
-    border: 2px solid transparent;
+    border: 2px solid #fdd4c1;
     padding: 15px;
     font-size: 15px;
     color: #616161;
-    transition: all 0.4s ease;
+
 }
 form .input-group input:focus{
-    border-color: #721f1f69;
+    border-color: #f05b16;
 }
 form .input-group button{
     width: 100%;
