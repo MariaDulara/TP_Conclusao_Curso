@@ -18,22 +18,22 @@
             <form  action="cadastro_professor_action.php" method="post">
                 <div class="input-group">
                     <label for="Departamento">Departamento</label>
-                    <input type="text" id="nome" placeholder="Digite o seu Departamento" required>
+                    <input type="text" id="nome" name="departamento" placeholder="Digite o seu Departamento" required>
                 </div>
 
                 <div class="input-group">
                     <label for="Salário Base">Salário Base</label>
-                    <input type="int" id="salario" placeholder="Digite o seu Salário" required>
+                    <input type="int" id="salario" name="salarioBase" placeholder="Digite o seu Salário" required>
                 </div>
 
                 <div class="input-group w50">
                     <label for="senha">Benefícios</label>
-                    <input type="int" id="benefincios" placeholder="Digite seus benefícios" required>
+                    <input type="int" id="benefincios" name="beneficios" placeholder="Digite seus benefícios" required>
                 </div>
 
                 <div class="input-group w50">
                     <label for="Descontos">Descontos</label>
-                    <input type="int" id="Descontos" placeholder="Descontos" required>
+                    <input type="int" id="Descontos" name="descontos" placeholder="Descontos" required>
                 </div>
 
                 <div class="input-group">
