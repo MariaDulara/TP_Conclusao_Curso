@@ -24,12 +24,12 @@
 
                 <div class="input-group">
                     <label for="Saário Base">Login</label>
-                    <input type="text" id="login" placeholder="Digite o seu login" required>
+                    <input type="text" id="login" name="login" placeholder="Digite o seu login" required>
                 </div>
 
                 <div class="input-group w50">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                     
                 </div>
                 <div class="input-group">

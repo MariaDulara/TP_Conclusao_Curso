@@ -2,10 +2,10 @@
 session_start();
 include '../classes/Usuario.php';
 
-$email = $_POST['email'];
+$login = $_POST['login'];
 $senha = $_POST['senha'];
 
-$usuario = Usuario::login($email, $senha);
+$usuario = Usuario::login($login, $senha);
 
 if ($usuario) {
     $_SESSION['user_id'] = $usuario->idUsuario;
