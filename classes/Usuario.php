@@ -14,9 +14,20 @@ class Usuario {
           $this->papel = $papel;
       }
   
-      public function entrar() {
-          
-      }
+      public static function login($email, $senha) {
+        $conn = new mysqli('localhost', 'username', 'password', 'FolhaDePagamento');
+        $stmt = $conn->prepare("SELECT * FROM Usuario WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $usuario = $result->fetch_object('Usuario');
+        
+        if ($usuario && password_verify($senha, $usuario->senha)) {
+            return $usuario;
+        } else {
+            return false;
+        }
+    }
   
       public function sair() {
           

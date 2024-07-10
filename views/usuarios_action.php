@@ -1,17 +1,16 @@
 <?php
-    include '../classes/Usuario.php';
+session_start();
+include '../classes/Usuario.php';
 
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $papel = $_POST['papel'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
-    $usuario = new Usuario();
-    $usuario->nome = $nome;
-    $usuario->email = $email;
-    $usuario->senha = password_hash($senha, PASSWORD_BCRYPT);
-    $usuario->papel = $papel;
-    $usuario->save();
+$usuario = Usuario::login($email, $senha);
 
-    header('Location: usuarios.php');
+if ($usuario) {
+    $_SESSION['user_id'] = $usuario->idUsuario;
+    header('Location: ../index.php');
+} else {
+    echo "Credenciais inválidas";
+}
 ?>
