@@ -1,7 +1,5 @@
--- Ativar o suporte a chaves estrangeiras
 PRAGMA foreign_keys = ON;
 
--- Tabela Usuario
 CREATE TABLE Usuario (
     idUsuario INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
@@ -10,7 +8,6 @@ CREATE TABLE Usuario (
     papel TEXT CHECK(papel IN ('Professor', 'Coordenador', 'Secretario')) NOT NULL
 );
 
--- Tabela Coordenador
 CREATE TABLE Coordenador (
     idCoordenador INTEGER PRIMARY KEY AUTOINCREMENT,
     idUsuario INTEGER NOT NULL,
@@ -18,7 +15,6 @@ CREATE TABLE Coordenador (
     FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario)
 );
 
--- Tabela Professor
 CREATE TABLE Professor (
     idProfessor INTEGER PRIMARY KEY AUTOINCREMENT,
     idUsuario INTEGER NOT NULL,
@@ -26,7 +22,6 @@ CREATE TABLE Professor (
     FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario)
 );
 
--- Tabela DetalhesSalario
 CREATE TABLE DetalhesSalario (
     idProfessor INTEGER NOT NULL,
     salarioBase REAL NOT NULL,
@@ -37,7 +32,6 @@ CREATE TABLE DetalhesSalario (
     FOREIGN KEY (idProfessor) REFERENCES Professor(idProfessor)
 );
 
--- Tabela FolhaPagamento
 CREATE TABLE FolhaPagamento (
     idFolhaPagamento INTEGER PRIMARY KEY AUTOINCREMENT,
     mes INTEGER NOT NULL,
@@ -61,7 +55,6 @@ CREATE TABLE Holerite (
     FOREIGN KEY (detalhesSalario) REFERENCES DetalhesSalario(idProfessor)
 );
 
--- Tabela RelatorioPagamento
 CREATE TABLE RelatorioPagamento (
     idRelatorio INTEGER PRIMARY KEY AUTOINCREMENT,
     mes INTEGER NOT NULL,
@@ -69,7 +62,6 @@ CREATE TABLE RelatorioPagamento (
     departamento TEXT NOT NULL
 );
 
--- Tabela RelatorioPagamento_Holerite (Tabela de Relacionamento)
 CREATE TABLE RelatorioPagamento_Holerite (
     idRelatorio INTEGER NOT NULL,
     idHolerite INTEGER NOT NULL,
@@ -78,7 +70,6 @@ CREATE TABLE RelatorioPagamento_Holerite (
     FOREIGN KEY (idHolerite) REFERENCES Holerite(idHolerite)
 );
 
--- Índices adicionais para otimização
 CREATE INDEX idx_departamento_coordenador ON Coordenador(departamento);
 CREATE INDEX idx_departamento_professor ON Professor(departamento);
 CREATE INDEX idx_mes_ano_holerite ON Holerite(mes, ano);
