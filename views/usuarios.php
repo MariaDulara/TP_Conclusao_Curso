@@ -14,7 +14,7 @@
             <a href="index.php"><img src="../views/imagens/proz.png"></a>
         </div>
         <div class="form-box">
-            <h2><a href="index.php">Início &nbsp&nbsp</a>
+            <h2><a href="../index.php">Início &nbsp&nbsp</a>
             <h2><a href="cadastro_professor.php">Cadastro &nbsp&nbsp</a>
             <form action="usuarios_action.php" method="post">
                 <div class="input-group">

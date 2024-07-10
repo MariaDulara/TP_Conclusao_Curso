@@ -13,14 +13,16 @@ class Usuario {
         $this->papel = $papel;
     }
 
-    public static function login($email, $senha) {
+    public static function login($nome, $senha) {
         $conn = new SQLite3('../database/FolhaDePagamento.db');
-        $stmt = $conn->prepare("SELECT * FROM Usuario WHERE email = :email");
-        $stmt->bindValue(':email', $email, SQLITE3_TEXT);
+        $stmt = $conn->prepare("SELECT * FROM Usuario WHERE nome = :nome");
+        $stmt->bindValue(':nome', $nome, SQLITE3_TEXT);
         $result = $stmt->execute();
         $usuario = $result->fetchArray(SQLITE3_ASSOC);
+       
 
-        if ($usuario && password_verify($senha, $usuario['senha'])) {
+        #verificar depois password_verify ($senha, $usuario['senha'])
+        if ($usuario && $senha == $usuario['senha']) {
             $user = new Usuario();
             $user->idUsuario = $usuario['idUsuario'];
             $user->nome = $usuario['nome'];

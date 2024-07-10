@@ -4,5 +4,5 @@
         header('Location: views/dashboard.php');
         exit();
     }
-
+    header('Location: views/dashboard.php');
 ?>
