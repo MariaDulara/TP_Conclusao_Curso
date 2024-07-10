@@ -15,7 +15,7 @@
         </div>
         <div class="form-box">
             <h2><a href="index.php">Início</a>
-            <form action="#">
+            <form  action="cadastro_professor_action.php" method="post">
                 <div class="input-group">
                     <label for="Departamento">Departamento</label>
                     <input type="text" id="nome" placeholder="Digite o seu Departamento" required>

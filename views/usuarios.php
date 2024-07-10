@@ -16,7 +16,7 @@
         <div class="form-box">
             <h2><a href="index.php">Início &nbsp&nbsp</a>
             <h2><a href="cadastro_professor.php">Cadastro &nbsp&nbsp</a>
-            <form action="#">
+            <form action="usuarios_action.php" method="post">
                 <div class="input-group">
                     <label for="Departamento">Email</label>
                     <input type="email" id="email" placeholder="Digite o seu e-mail" required>

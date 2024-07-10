@@ -76,7 +76,7 @@
 <div class="container">
       <div class="coluna">
     <h2>Folha de Pagamento</h2>
-    <form>
+    <form action="folha_pagamento_action.php" method="post">
         <label for="mes">Mês:</label>
         <select name="mes" id="mes">
             <option value="jan">Janeiro</option>

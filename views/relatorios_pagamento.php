@@ -17,7 +17,7 @@
     </header>
 
     <main>
-        <form action="" method="post">
+        <form action="relatorios_pagamento_action.php" method="post">
             <fieldset>
                 <legend>Filtros</legend>
                 <div class="input-group">

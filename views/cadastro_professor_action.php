@@ -1,5 +1,5 @@
 <?php
-    include 'Professor.php';
+include '../classes/Professor.php';
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
