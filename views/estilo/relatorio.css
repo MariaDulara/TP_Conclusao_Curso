@@ -1,0 +1,226 @@
+/*weidyane*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #593493;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+
+}
+
+/*
+.header {
+    background: #593493;
+    padding-inline:  16px;
+}
+
+.nav {
+    max-width: 1280px;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.nav-list h2 {
+    color: white;
+    align-items: flex-end;
+}
+*/
+
+/* styles.css - wesley*/
+
+/*
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+*/
+
+
+main {
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 15px 10px 15px 2px rgba(192, 192, 192, 0.226);
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3D3D3D;
+    display: block;
+    margin: 12px 0 8px 2px;
+}
+
+form h2 {
+    color: #ff7f00;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+form a > h2 {
+    color: #ff7f00;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+
+/* código atual*/
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #fdd4c1;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #ff7f00;
+    color: rgb(0, 0, 0);
+
+    justify-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f39122;
+}
+
+.botao {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* styles.css 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+form {
+    display: block;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #e0840b;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #eba50f;
+}
+.home-link {
+    display: inline-block;
+    padding: 1px;
+    border-radius: 10%;
+    background-color: #593493;
+}
+
+.home-link img {
+    width: 70px;
+    height: 70px;
+}*/

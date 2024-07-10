@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style2.css">
-    <title>Folha de Pagamento</title>
+    <link rel="stylesheet" href="estilo/relatorio.css">
+    <title>Relatório de Pagamento</title>
     <link rel="shortcut icon" href="imagens/logo-proz.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <!--<header class="header">
+        <nav class="nav">
+            <a href="dashboard.php"><img src="../views/imagens/proz.png"></a>
+            <div class="nav-list">
+                <h2>Relatório de Pagamento</h2>
+            </div>
+        </nav>
+    </header>-->
+    <!--<header>
         <h2>Relatórios de Pagamento</h2>
         <a href="dashboard - Copia.php" class="home-link">
             <img src="imagens/proz.png" alt="Home">
         </a>
-    </header>
+    </header>-->
 
     <main>
-        <form action="relatorios_pagamento_action.php" method="post">
-            <fieldset>
-                <legend>Filtros</legend>
+        <form action="" method="post">
+
                 <div class="input-group">
+                    <a href="dashboard.php"><h2>Início</h2></a>
+                    <h2>Relatório de Pagamento</h2>
                     <label for="departamento">Departamento:</label>
                     <input type="text" name="departamento" id="departamento">
                 </div>
@@ -43,8 +52,8 @@
                     <label for="ano">Ano:</label>
                     <input type="number" id="ano" name="ano">
                 </div>
-                <button type="submit">Gerar Folha de Pagamento</button>
-            </fieldset>
+                <div class="botao"><button type="submit">Gerar Folha de Pagamento</button></div>
+            
         </form>
     </main>
 </body>
