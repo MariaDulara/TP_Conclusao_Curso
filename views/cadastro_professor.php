@@ -17,13 +17,24 @@
             <h2><a href="index.php">Início</a>
             <form  action="cadastro_professor_action.php" method="post">
                 <div class="input-group">
+                    <label for="Departamento">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu Nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Salário Base">E-mail</label>
+                    <input type="int" id="salario" name="email" placeholder="Digite o seu E-mail" required>
+                </div>
+
+
+                <div class="input-group">
                     <label for="Departamento">Departamento</label>
                     <input type="text" id="nome" name="departamento" placeholder="Digite o seu Departamento" required>
                 </div>
 
                 <div class="input-group">
                     <label for="Salário Base">Salário Base</label>
-                    <input type="int" id="salario" name="salarioBase" placeholder="Digite o seu Salário" required>
+                    <input type="int" id="salario" name="salario_base" placeholder="Digite o seu Salário" required>
                 </div>
 
                 <div class="input-group w50">
