@@ -20,6 +20,8 @@
                   </ul>
             </nav>
       </header>
-      <main class="corpo"></main>
+
+            <img src="imagens/banner-proz.png" alt="" class="banner">
+
 </body>
 </html>
