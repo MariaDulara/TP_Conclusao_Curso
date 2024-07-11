@@ -35,6 +35,26 @@ class Usuario {
         }
     }
 
+    public static function findByEmail($email) {
+        $conn = new SQLite3('../database/FolhaDePagamento.db');
+        $stmt = $conn->prepare("SELECT * FROM Usuario WHERE email = :email");
+        $stmt->bindValue(':email', $email, SQLITE3_TEXT);
+        $result = $stmt->execute();
+
+        $usuario = null;
+        if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+            $usuario = new Usuario();
+            $usuario->idUsuario = $row['idUsuario'];
+            $usuario->nome = $row['nome'];
+            $usuario->email = $row['email'];
+            $usuario->senha = $row['senha'];
+            $usuario->papel = $row['papel'];
+        }
+
+        $conn->close();
+        return $usuario;
+    }
+
     public function save() {
         $conn = new SQLite3('../database/FolhaDePagamento.db');
         if ($this->idUsuario) {

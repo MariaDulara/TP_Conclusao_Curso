@@ -1,21 +1,37 @@
 <?php
-include '../classes/Professor.php';
+include_once '../classes/Usuario.php'; 
+include_once '../classes/Professor.php'; 
+include_once '../classes/DetalhesSalario.php'; 
 
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $departamento = $_POST['departamento'];
-    $salario_base = $_POST['salario_base'];
-    $beneficios = $_POST['beneficios'];
-    $descontos = $_POST['descontos'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$departamento = $_POST['departamento'];
+$salarioBase = $_POST['salario_base'];
+$beneficios = $_POST['beneficios'];
+$descontos = $_POST['descontos'];
 
-    $professor = new Professor();
-    $professor->nome = $nome;
-    $professor->email = $email;
-    $professor->departamento = $departamento;
-    $professor->salarioBase = $salario_base;
-    $professor->beneficios = $beneficios;
-    $professor->descontos = $descontos;
+$usuarioExistente = Usuario::findByEmail($email);
+
+if ($usuarioExistente) {
+    echo "Erro ao cadastrar o professor: E-mail já cadastrado.";
+    exit; 
+}
+
+$usuario = new Usuario($nome, $email, $senha=null, 'Professor');
+
+try {
+    $usuario->save();
+    $idUsuario = $usuario->idUsuario;
+
+
+    $detalhesSalario = new DetalhesSalario(null, $salarioBase, $beneficios, $descontos);
+
+    $professor = new Professor($idUsuario, $departamento, $detalhesSalario);
+    
     $professor->save();
 
-    header('Location: cadastro_professor.php');
+    echo "Professor cadastrado com sucesso!";
+} catch (Exception $e) {
+    echo "Erro ao cadastrar o professor: " . $e->getMessage();
+}
 ?>
